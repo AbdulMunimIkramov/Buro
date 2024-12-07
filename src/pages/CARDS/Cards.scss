@@ -1,0 +1,7 @@
+.Cards {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;   /* Позволяет карточкам переноситься на новую строку */    
+    
+    row-gap: 30px;
+}

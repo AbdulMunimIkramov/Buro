@@ -1,0 +1,74 @@
+.dropdown {
+  position: relative;
+  width: 260px;
+  cursor: pointer;
+
+  &__header {
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: 0.3s;
+
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 67%;
+    text-transform: uppercase;
+    color: #000;
+
+
+    &__svg {
+      cursor: pointer;
+
+      path {
+        fill: black; // Задаем цвет заливки для всех <path> внутри .__svg
+      }
+    }
+
+    &:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      svg {
+        path {
+          fill: white; // Задаем цвет заливки для всех <path> внутри .__svg
+        }
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0.5px solid;
+    border-radius: 0 0 10px 10px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  &__item {
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 67%;
+    color: #000;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.header {
+  position: relative;
+
+  // &__underline {
+  //   &::before {
+  //     content: '';
+  //     position: absolute; // Абсолютное позиционирование для псевдоэлемента
+  //     left: 0;
+  //     bottom: 5px;
+  //     width: 100%; // Задаем ширину линии по ширине поля ввода
+  //     height: 0.2px;
+  //     background-color: black; // Черная линия под полем ввода
+  //   }
+  // }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__leftWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__navigates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    svg {
+      transition: transform 0.3s ;
+
+      &:hover {
+        transform: scale(1.2);
+        fill: #fff;
+      }
+    }
+  }
+
+  &__search {
+    position: relative; // Добавляем относительное позиционирование для родительского блока
+
+    &__input {
+      width: 210px;
+      padding-bottom: 5px; // Оставляем немного пространства для псевдоэлемента
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 126%;
+      color: #000;
+    }
+
+    &__underline {
+      &::before {
+        content: '';
+        position: absolute; // Абсолютное позиционирование для псевдоэлемента
+        left: 0;
+        bottom: 5px;
+        width: 240px; // Задаем ширину линии по ширине поля ввода
+        height: 1px;
+        background-color: black; // Черная линия под полем ввода
+      }
+    }
+  }
+
+  &__autorized {
+    transition: 0.3s;
+    border-radius: 50px;
+    background-color: black;
+    width: 159px;
+    height: 60px;
+
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 67%;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
