@@ -1,10 +1,12 @@
 .Card {
     cursor: pointer;
 
+    position: relative;
+
     border-radius: 20px;
     width: 251px;
     height: 310px;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
 
     overflow: hidden;
 
@@ -12,6 +14,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
+    &__heart {
+        cursor: pointer;
+        top: 5px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 
     &__img {
         width: 250px;
@@ -34,8 +54,10 @@
     }
 
     &__underline {
-        width: 100%;  /* Добавил ширину */
-        height: 2px; /* Добавил высоту */
+        width: 100%;
+        /* Добавил ширину */
+        height: 2px;
+        /* Добавил высоту */
         background-color: black;
         margin: 5px 0;
     }

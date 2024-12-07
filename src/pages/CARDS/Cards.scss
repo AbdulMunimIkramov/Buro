@@ -1,7 +1,11 @@
+body {
+    background-color: hsla(0, 0%, 0%, 0.158);
+}
+
 .Cards {
-    margin-top: 10px;
+    padding: 90px;
     display: flex;
-    flex-wrap: wrap;   /* Позволяет карточкам переноситься на новую строку */    
-    
+    flex-wrap: wrap;
+    /* Позволяет карточкам переноситься на новую строку */
     row-gap: 30px;
 }

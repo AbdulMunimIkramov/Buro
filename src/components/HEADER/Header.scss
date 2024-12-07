@@ -1,6 +1,10 @@
 .header {
-  position: relative;
-
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 5px;
+  height: 78px;
   // &__underline {
   //   &::before {
   //     content: '';
