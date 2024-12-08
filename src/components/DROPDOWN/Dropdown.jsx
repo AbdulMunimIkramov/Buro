@@ -3,11 +3,9 @@ import "./Dropdown.scss"; // Подключаем SCSS файл
 
 function Dropdown() {
     const [isOpen, setIsOpen] = useState(false); // Управление видимостью списка
-    const [selectedOption, setSelectedOption] = useState("Все категории"); // Выбранное значение
     const dropdownRef = useRef(null); // Ссылка на контейнер для обработки кликов вне списка
-
-    const options = ["Документы", "Ключи", "Телефоны", "Часы", "Кошелёк"]; // Список опций
-
+    const options = ["Все категории", "Документы", "Ключи", "Телефоны", "Часы", "Кошелёк"]; // Список опций
+    const [selectedOption, setSelectedOption] = useState(options[0]); // Выбранное значение
     const handleOptionClick = (option) => {
         setSelectedOption(option);
         setIsOpen(false);
