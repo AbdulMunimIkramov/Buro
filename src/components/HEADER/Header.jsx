@@ -48,7 +48,9 @@ export const Header = () => {
                         </svg>
                     </div>
 
+                    <NavLink to="auth">
                     <button className='header__autorized'>Войти</button>
+                    </NavLink>
                 </div>
             </div>
         </header>
